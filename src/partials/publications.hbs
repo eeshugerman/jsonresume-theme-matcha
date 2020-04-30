@@ -4,10 +4,10 @@
 
     {{#each resume.publications}}
     <section class="item">
-        {{> section-header name=this.name}}
+        {{> section-header name=this.publisher}}
 
         {{#if publisher}}
-        <h5 class="awarder">{{publisher}}</h5>
+        <h5 class="awarder">{{name}}</h5>
         {{/if}}
 
         {{#if summary}}
