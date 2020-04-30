@@ -137,6 +137,18 @@
       "type": "application"
     }
   ],
+  "fossContribs": [
+    {
+      "project": "GNOME Shell",
+      "url": "https://github.com/someUser/someProject/pull/1234",
+      "summary": "Improved component X, wrote documentation for Y and Z."
+    },
+    {
+      "project": "KDE Plasma",
+      "url": "https://github.com/someUser/someProject/pull/1234",
+      "summary": "Did a thing."
+    }
+  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",

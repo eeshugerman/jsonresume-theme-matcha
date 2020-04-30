@@ -1,0 +1,16 @@
+{{#if resume.fossContribs.length}}
+  <div class="container fossContribs-container">
+    {{> title value="Open Source Contributions"}}
+
+    {{#each resume.fossContribs}}
+      <section class="item">
+        {{> section-header name=this.project website=this.url showWebsite=false}}
+
+        {{#if summary}}
+          <p class="summary">{{summary}}</p>
+        {{/if}}
+
+      </section>
+    {{/each}}
+  </div>
+{{/if}}
