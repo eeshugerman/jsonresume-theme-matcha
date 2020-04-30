@@ -1,16 +1,6 @@
 {{#resume.basics}}
-<div class="container about-container">
-    {{> title value="About"}}
-
-    {{#if location}}
-        {{#location}}
-        {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
-        {{/location}}
-    {{/if}}
-
-    {{#if birthday}}
-        {{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
-    {{/if}}
+<div class="container">
+    {{> title value="Contact"}}
 
     {{#if email}}
         {{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
@@ -18,6 +8,12 @@
 
     {{#if phone}}
         {{> info-tag text=this.phone icon="fa-mobile"}}
+    {{/if}}
+
+    {{#if location}}
+      {{#location}}
+        {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+      {{/location}}
     {{/if}}
 
     {{#if website}}
