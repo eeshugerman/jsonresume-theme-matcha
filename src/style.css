@@ -78,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: none;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -244,10 +244,6 @@ ul.two-column li {
   color: dimgray;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 /* Layouts */
 .page {
   background: white;
@@ -378,15 +374,4 @@ ul.two-column li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.main-skill {
-  font-size: 80%;
-}
-
-.skill {
-  margin: .15em;
-  padding: .15em;
-  background: ghostwhite;
-  border-radius: 5px;
 }
