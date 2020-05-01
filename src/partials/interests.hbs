@@ -7,6 +7,11 @@
                 {{#if name}}
                     <h4 class="bold">{{name}}</h4>
                 {{/if}}
+
+                {{#if description}}
+                <p>{{ description }}</p>
+                {{/if}}
+
                 {{#if keywords.length}}
                     <ul class="minimal">
                         {{#each keywords}}
