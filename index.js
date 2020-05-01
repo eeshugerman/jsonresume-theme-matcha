@@ -2,6 +2,7 @@ const fs = require('fs');
 const handlebars = require('handlebars');
 const handlebarsWax = require('handlebars-wax');
 const moment = require('moment');
+const { markdown } = require('markdown');
 
 handlebars.registerHelper({
   removeProtocol: url => url.replace(/.*?:\/\//g, ''),
@@ -12,6 +13,7 @@ handlebars.registerHelper({
   formatDate: date => moment(date).format('MM/YYYY'),
   lowercase: s => s.toLowerCase(),
   eq: (a, b) => a === b,
+  markdown: s => markdown.toHTML(s),
 });
 
 function render(resume) {
