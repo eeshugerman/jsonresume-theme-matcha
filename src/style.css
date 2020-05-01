@@ -87,6 +87,7 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 1px;
+  margin-left: -1.5pt;   /* algain with h2 */
 }
 
 h2 {
@@ -202,10 +203,6 @@ ul.two-column li {
   width: 45px;
   margin: 8px 0 10px;
   border-top: 1px solid #56817A;
-}
-
-.pull-left {
-  float: left;
 }
 
 .pull-right {
