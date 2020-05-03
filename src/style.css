@@ -90,7 +90,7 @@ h1 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-left: -1.5pt;   /* algain with h2 */
 }
 
@@ -98,7 +98,7 @@ h2 {
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -173,8 +173,13 @@ em {
   color: #999;
 }
 
+u {
+  color: #999;
+  text-decoration: none;
+}
+
 ul {
-  margin: 10px 0 0;
+  margin: 10px 0 10px;
   -webkit-padding-start: 25px;
 }
 
@@ -296,6 +301,7 @@ ul.two-column li {
     box-shadow: none;
   }
 
+  .interests-container,
   .references-container,
   .publications-container,
   .skills-container,
@@ -356,6 +362,10 @@ ul.two-column li {
 
 .references-container .fa {
   font-size: 14px;
+}
+
+.interests-container p {
+  max-width: 1.75in;
 }
 
 .education-container .location {
