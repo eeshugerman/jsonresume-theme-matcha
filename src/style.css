@@ -257,7 +257,7 @@ ul.two-column li {
   display: block;
   margin: 0 auto;
   border-top: 10px solid #56817A;
-  padding: 0.5in;
+  padding: calc(0.5in - 10px) 0.5in 0.5in;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
