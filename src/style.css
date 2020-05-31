@@ -301,6 +301,7 @@ ul.two-column li {
     box-shadow: none;
   }
 
+  /* doesn't do anything anymore since we set pageRanges: '1' */
   .interests-container,
   .references-container,
   .publications-container,

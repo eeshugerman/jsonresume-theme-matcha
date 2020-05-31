@@ -35,6 +35,7 @@ function render(resume) {
 // doesn't work :(
 const pdfRenderOptions = {
   mediaType: 'print',
+  pageRanges: '1',
 };
 
 module.exports = {
