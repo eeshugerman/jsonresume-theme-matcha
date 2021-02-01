@@ -148,8 +148,7 @@ a:hover {
 }
 
 a .fa-external-link {
-  font-size: 10px;
-  vertical-align: text-top;
+  font-size: 12px;
 }
 
 p,
@@ -209,7 +208,8 @@ ul.two-column li {
 }
 
 .container {
-  padding-top: 20px;
+  padding-top: 15px;
+  page-break-inside: avoid;
 }
 
 .keyline {
@@ -299,23 +299,6 @@ ul.two-column li {
 
   .page {
     box-shadow: none;
-  }
-
-  /* doesn't do anything anymore since we set pageRanges: '1' */
-  .interests-container,
-  .references-container,
-  .publications-container,
-  .skills-container,
-  .education-container,
-  .volunteer-container,
-  .projects-container,
-  .awards-container,
-  .work-container .item {
-    page-break-inside: avoid;
-  }
-
-  .fa-external-link {
-    display: none;
   }
 }
 

@@ -3,7 +3,12 @@
     {{> title value="Open Source Contributions"}}
     {{#each resume.fossContribs}}
         <section class="item">
-            {{> section-header name=this.project website=this.url showWebsite=false}}
+            {{> section-header
+                name=this.project
+                website=this.url
+                showWebsite=false
+                showLinkIcon=(andNot this.url this.highlights)
+            }}
             {{#if (or summary highlights)}}
             {{#if summary}}
               <p class="summary">{{{markdown summary }}}</p>

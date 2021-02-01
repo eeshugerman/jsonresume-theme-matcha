@@ -14,7 +14,8 @@ handlebars.registerHelper({
   lowercase: s => s.toLowerCase(),
   eq: (a, b) => a === b,
   markdown: s => marked(s),
-  or: (a, b) => a || b,
+  or: ((a, b) => a || b),
+  andNot: ((a, b) => a && !b),
 });
 
 function render(resume) {
@@ -32,7 +33,6 @@ function render(resume) {
   });
 }
 
-// doesn't work :(
 const pdfRenderOptions = {
   mediaType: 'print',
   pageRanges: '1',

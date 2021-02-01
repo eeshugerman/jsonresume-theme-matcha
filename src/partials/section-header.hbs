@@ -7,7 +7,9 @@
                 {{#if showWebsite }}
                     <span class="sublink">∙ <a href="{{website}}" target="_blank" class="sublink">{{website}}</a></span>
                 {{/if}}
-                {{!-- <i class="fa fa-external-link" aria-hidden="true"></i> --}}
+                {{#if showLinkIcon }}
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                {{/if}}
             </a>
         {{else}}
             {{name}}
